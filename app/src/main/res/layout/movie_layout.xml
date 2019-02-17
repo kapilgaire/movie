@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/movie_cover_art_iv_movie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover"
+            app:riv_corner_radius="10dp" />
+
+        <TextView
+            android:id="@+id/movie_rating_tv_movie_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/movie_year_tv_movie_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rating_label_bg"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="16dp"
+            android:fontFamily="@string/font_family_black"
+            android:padding="8dp"
+            android:text="9.9"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/movie_year_tv_movie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_cover_art_iv_movie_layout"
+            android:fontFamily="@string/font_family_medium"
+            android:text="2018"
+            android:textColor="@color/grey"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/movie_name_tv_movie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_year_tv_movie_layout"
+            android:fontFamily="@string/font_family_medium"
+            android:text="Avenger Infinity war"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/movie_genre_tv_movie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_name_tv_movie_layout"
+            android:fontFamily="@string/font_family_medium"
+            android:text="Action , Sci-fi"
+            android:textColor="@color/grey"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/movie_summary_tv_movie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_genre_tv_movie_layout"
+            android:ellipsize="marquee"
+            android:maxLines="4"
+            android:text="Lorem, Ipsum,Lorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem, IpsumLorem,Lorem, Ipsum"
+            android:textColor="@color/lighGrey" />
+
+    </RelativeLayout>
+
+</FrameLayout>
